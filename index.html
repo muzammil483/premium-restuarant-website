@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Grand Table | Fine Dining Experience</title>
+    <meta name="description" content="The Grand Table offers an exceptional dining experience with delicious food, elegant atmosphere and unforgettable hospitality.">
+    <meta name="theme-color" content="#171713">
+
+    <meta property="og:title" content="The Grand Table | Fine Dining Experience">
+    <meta property="og:description" content="Exquisite flavors, exceptional hospitality. Reserve your table today.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=80">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽️</text></svg>">
+
+    <script>document.documentElement.classList.add("js");</script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <div class="announcement">
+        <p>Experience exceptional dining. Reserve your table today.</p>
+    </div>
+
+    <header class="header" id="header">
+        <div class="container nav-wrapper">
+
+            <a href="#home" class="logo">THE GRAND <span>TABLE.</span></a>
+
+            <button class="menu-toggle" id="menuToggle"
+                aria-label="Open navigation"
+                aria-expanded="false"
+                aria-controls="navMenu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="nav-menu" id="navMenu" aria-label="Main navigation">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">Our Story</a>
+                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#reservation" class="nav-reservation">Book a Table</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main id="main">
+
+        <!-- Hero -->
+        <section class="hero" id="home">
+            <div class="hero-overlay"></div>
+
+            <div class="container hero-content">
+
+                <span class="eyebrow"><span></span> WELCOME TO THE GRAND TABLE</span>
+
+                <h1>An Unforgettable <span>Dining Experience.</span></h1>
+
+                <p>
+                    Discover the perfect blend of exquisite flavors,
+                    exceptional hospitality and an atmosphere
+                    designed to make every moment special.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">
+                        Explore Our Menu <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="#reservation" class="btn btn-outline">Reserve a Table</a>
+                </div>
+
+                <div class="hero-rating">
+                    <div class="stars" aria-hidden="true">★★★★★</div>
+                    <span>Crafted with passion. Served with love.</span>
+                </div>
+
+            </div>
+
+            <a href="#about" class="scroll-down" aria-label="Scroll to next section">
+                <i class="fa-solid fa-arrow-down"></i>
+            </a>
+        </section>
+
+        <!-- Features -->
+        <section class="features">
+            <div class="container features-grid">
+
+                <div class="feature reveal">
+                    <i class="fa-solid fa-leaf" aria-hidden="true"></i>
+                    <div>
+                        <h3>Fresh Ingredients</h3>
+                        <p>Quality in every bite</p>
+                    </div>
+                </div>
+
+                <div class="feature reveal">
+                    <i class="fa-solid fa-kitchen-set" aria-hidden="true"></i>
+                    <div>
+                        <h3>Expert Chefs</h3>
+                        <p>Passion meets perfection</p>
+                    </div>
+                </div>
+
+                <div class="feature reveal">
+                    <i class="fa-solid fa-wine-glass" aria-hidden="true"></i>
+                    <div>
+                        <h3>Elegant Dining</h3>
+                        <p>Memorable atmosphere</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="about section-padding" id="about">
+            <div class="container about-grid">
+
+                <div class="about-images reveal">
+                    <img
+                        src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=80"
+                        alt="Elegant restaurant dining setup"
+                        width="900" height="620"
+                        loading="lazy"
+                        class="about-main-image">
+
+                    <div class="about-experience">
+                        <strong>10+</strong>
+                        <span>Years of<br>Excellence</span>
+                    </div>
+                </div>
+
+                <div class="about-content reveal">
+
+                    <span class="section-label">OUR STORY</span>
+
+                    <h2>More Than Food, <span>It's an Experience.</span></h2>
+
+                    <p>
+                        At The Grand Table, we believe great food
+                        brings people together. Every dish is prepared
+                        with carefully selected ingredients,
+                        creativity and a genuine passion for cooking.
+                    </p>
+
+                    <p>
+                        From intimate dinners to special celebrations,
+                        we create moments worth remembering.
+                    </p>
+
+                    <a href="#menu" class="text-link">
+                        Discover Our Menu <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Menu -->
+        <section class="menu-section section-padding" id="menu">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-label">OUR SPECIALTIES</span>
+                    <h2>Explore Our <span>Menu</span></h2>
+                    <p>Carefully prepared dishes made to delight your taste buds.</p>
+                </div>
+
+                <div class="menu-filters" role="group" aria-label="Filter menu">
+                    <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+                    <button class="filter-btn" data-filter="main" aria-pressed="false">Main Course</button>
+                    <button class="filter-btn" data-filter="pizza" aria-pressed="false">Pizza</button>
+                    <button class="filter-btn" data-filter="dessert" aria-pressed="false">Desserts</button>
+                </div>
+
+                <div class="menu-grid">
+
+                    <article class="menu-card" data-category="main">
+                        <div class="menu-image">
+                            <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=700&q=80"
+                                alt="Grilled steak" width="700" height="500" loading="lazy">
+                            <span class="dish-tag">POPULAR</span>
+                        </div>
+                        <div class="menu-info">
+                            <div class="dish-heading">
+                                <h3>Grilled Steak</h3>
+                                <span>Rs. 2,450</span>
+                            </div>
+                            <p>Tender grilled steak with herbs and signature sauce.</p>
+                        </div>
+                    </article>
+
+                    <article class="menu-card" data-category="pizza">
+                        <div class="menu-image">
+                            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=700&q=80"
+                                alt="Freshly baked pizza" width="700" height="500" loading="lazy">
+                        </div>
+                        <div class="menu-info">
+                            <div class="dish-heading">
+                                <h3>Italian Pizza</h3>
+                                <span>Rs. 1,650</span>
+                            </div>
+                            <p>Fresh mozzarella, rich tomato sauce and Italian herbs.</p>
+                        </div>
+                    </article>
+
+                    <article class="menu-card" data-category="main">
+                        <div class="menu-image">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=700&q=80"
+                                alt="Fresh healthy food bowl" width="700" height="500" loading="lazy">
+                        </div>
+                        <div class="menu-info">
+                            <div class="dish-heading">
+                                <h3>Fresh Garden Bowl</h3>
+                                <span>Rs. 950</span>
+                            </div>
+                            <p>A refreshing combination of fresh seasonal ingredients.</p>
+                        </div>
+                    </article>
+
+                    <article class="menu-card" data-category="dessert">
+                        <div class="menu-image">
+                            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=700&q=80"
+                                alt="Chocolate cake" width="700" height="500" loading="lazy">
+                        </div>
+                        <div class="menu-info">
+                            <div class="dish-heading">
+                                <h3>Chocolate Cake</h3>
+                                <span>Rs. 750</span>
+                            </div>
+                            <p>Rich chocolate layers with a smooth creamy filling.</p>
+                        </div>
+                    </article>
+
+                    <article class="menu-card" data-category="pizza">
+                        <div class="menu-image">
+                            <img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=700&q=80"
+                                alt="Special Italian pizza" width="700" height="500" loading="lazy">
+                        </div>
+                        <div class="menu-info">
+                            <div class="dish-heading">
+                                <h3>Special Pizza</h3>
+                                <span>Rs. 1,850</span>
+                            </div>
+                            <p>Loaded with fresh toppings and delicious cheese.</p>
+                        </div>
+                    </article>
+
+                    <article class="menu-card" data-category="dessert">
+                        <div class="menu-image">
+                            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=700&q=80"
+                                alt="Creamy dessert" width="700" height="500" loading="lazy">
+                        </div>
+                        <div class="menu-info">
+                            <div class="dish-heading">
+                                <h3>Signature Dessert</h3>
+                                <span>Rs. 650</span>
+                            </div>
+                            <p>A sweet finishing touch to your dining experience.</p>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="menu-footer">
+                    <a href="#reservation" class="btn btn-primary">
+                        Reserve Your Table <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Special -->
+        <section class="special-section">
+            <div class="special-overlay"></div>
+
+            <div class="container special-content reveal">
+                <span class="section-label">A SPECIAL INVITATION</span>
+
+                <h2>Good Food. <span>Great Moments.</span></h2>
+
+                <p>
+                    Make your next meal a memorable one.
+                    Join us for an exceptional dining experience.
+                </p>
+
+                <a href="#reservation" class="btn btn-primary">Book Your Experience</a>
+            </div>
+        </section>
+
+        <!-- Gallery -->
+        <section class="gallery-section section-padding" id="gallery">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-label">OUR ATMOSPHERE</span>
+                    <h2>A Glimpse of <span>Our World</span></h2>
+                    <p>Food, ambiance and beautiful memories.</p>
+                </div>
+
+                <div class="gallery-grid">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=900&q=80"
+                        alt="Restaurant interior" width="900" height="600" loading="lazy" tabindex="0" role="button">
+                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=900&q=80"
+                        alt="Restaurant dining" width="900" height="600" loading="lazy" tabindex="0" role="button">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=900&q=80"
+                        alt="Warm restaurant ambiance" width="900" height="600" loading="lazy" tabindex="0" role="button">
+                    <img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?w=900&q=80"
+                        alt="Fine dining table" width="900" height="600" loading="lazy" tabindex="0" role="button">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonial-section section-padding">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-label">GUEST EXPERIENCES</span>
+                    <h2>What Our Guests <span>Say</span></h2>
+                </div>
+
+                <div class="testimonial-grid">
+
+                    <article class="testimonial-card reveal">
+                        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        <p>"Amazing food, beautiful atmosphere and wonderful service. Definitely worth visiting again."</p>
+                        <h3>Ahmed Khan</h3>
+                        <span>Restaurant Guest</span>
+                    </article>
+
+                    <article class="testimonial-card reveal">
+                        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        <p>"One of the best dining experiences. Every dish was delicious and beautifully presented."</p>
+                        <h3>Sarah Ali</h3>
+                        <span>Restaurant Guest</span>
+                    </article>
+
+                    <article class="testimonial-card reveal">
+                        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        <p>"Excellent hospitality and a relaxing environment. Highly recommended."</p>
+                        <h3>Usman Malik</h3>
+                        <span>Restaurant Guest</span>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Reservation -->
+        <section class="reservation-section section-padding" id="reservation">
+            <div class="container reservation-grid">
+
+                <div class="reservation-content reveal">
+                    <span class="section-label">MAKE A RESERVATION</span>
+
+                    <h2>Your Table <span>Is Waiting.</span></h2>
+
+                    <p>
+                        Planning a special evening?
+                        Reserve your table and let us take care of the rest.
+                    </p>
+
+                    <a href="tel:+923001234567" class="reservation-contact">
+                        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                        <div>
+                            <span>Call Us</span>
+                            <strong>+92 300 1234567</strong>
+                        </div>
+                    </a>
+                </div>
+
+                <form class="reservation-form reveal" id="reservationForm" novalidate>
+
+                    <h3>Book Your Table</h3>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name"
+                                autocomplete="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+92 "
+                                autocomplete="tel" inputmode="tel" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="time">Time (12:00 PM - 11:00 PM)</label>
+                            <input type="time" id="time" name="time" min="12:00" max="23:00" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="guests">Number of Guests</label>
+                        <select id="guests" name="guests" required>
+                            <option value="">Select guests</option>
+                            <option value="1">1 Guest</option>
+                            <option value="2">2 Guests</option>
+                            <option value="3">3 Guests</option>
+                            <option value="4">4 Guests</option>
+                            <option value="5">5 Guests</option>
+                            <option value="6">6 Guests</option>
+                            <option value="7+">7+ Guests</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Special Request (Optional)</label>
+                        <textarea id="message" name="message" rows="3" maxlength="300"
+                            placeholder="Any special requests?"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary form-submit">
+                        Reserve via WhatsApp <i class="fa-brands fa-whatsapp"></i>
+                    </button>
+
+                    <p class="form-note" id="formMessage" role="status" aria-live="polite">
+                        Your reservation request will open in WhatsApp.
+                    </p>
+
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+
+        <div class="container footer-grid">
+
+            <div class="footer-about">
+                <a href="#home" class="logo">THE GRAND <span>TABLE.</span></a>
+
+                <p>Exceptional flavors, beautiful moments and hospitality that feels like home.</p>
+
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://wa.me/923363430483" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#about">Our Story</a>
+                <a href="#menu">Our Menu</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#reservation">Reservation</a>
+            </div>
+
+            <div class="footer-links">
+                <h3>Opening Hours</h3>
+                <p>Monday - Friday</p>
+                <span>12:00 PM - 11:00 PM</span>
+
+                <p>Saturday - Sunday</p>
+                <span>12:00 PM - 12:00 AM</span>
+            </div>
+
+            <div class="footer-links">
+                <h3>Contact Us</h3>
+
+                <p><i class="fa-solid fa-location-dot"></i> Your Restaurant Address</p>
+
+                <a href="tel:+923363430483">
+                    <i class="fa-solid fa-phone"></i> +92 3363430483
+                </a>
+
+                <a href="mailto:hello@grandtable.com">
+                    <i class="fa-solid fa-envelope"></i> muzammilpakistanim@gmail.com
+                </a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-content">
+                <p>© <span id="currentYear"></span> The Grand Table. All rights reserved.</p>
+                <p>Designed with passion.</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close preview">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <img id="lightboxImg" src="" alt="">
+    </div>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/923363430483" class="whatsapp-float"
+        target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>

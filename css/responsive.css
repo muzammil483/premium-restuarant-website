@@ -1,0 +1,277 @@
+/* =================================
+   THE GRAND TABLE - Responsive
+================================= */
+
+/* LAPTOP / SMALL DESKTOP */
+
+@media (max-width: 1100px) {
+    .nav-menu {
+        gap: 24px;
+    }
+
+    .about-grid {
+        gap: 60px;
+    }
+
+    .reservation-grid {
+        gap: 45px;
+    }
+}
+
+/* TABLETS: hamburger starts here */
+
+@media (max-width: 992px) {
+
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonial-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonial-grid .testimonial-card:last-child {
+        grid-column: 1 / -1;
+    }
+
+    .special-section {
+        background-attachment: scroll; /* fixes iOS parallax bug */
+    }
+}
+
+@media (max-width: 900px) {
+
+    :root {
+        --header-h: 70px;
+    }
+
+    .menu-toggle {
+        display: grid;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        max-height: calc(100vh - 120px);
+        overflow-y: auto;
+        background: var(--dark);
+        padding: 25px 5% 30px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 6px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
+
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: var(--transition);
+    }
+
+    .nav-menu.open {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .nav-link {
+        font-size: 16px;
+        padding: 14px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    }
+
+    .nav-link::after {
+        display: none;
+    }
+
+    .nav-reservation {
+        text-align: center;
+        margin-top: 14px;
+        padding: 16px;
+        font-size: 14px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .section-padding {
+        padding: 75px 0;
+    }
+
+    .hero {
+        min-height: 600px;
+    }
+
+    .hero-overlay {
+        background: linear-gradient(
+            180deg,
+            rgba(15, 15, 12, 0.8) 0%,
+            rgba(15, 15, 12, 0.9) 100%
+        );
+    }
+
+    .hero-content {
+        padding: 80px 0 90px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .about-main-image {
+        height: 380px;
+    }
+
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-grid .testimonial-card:last-child {
+        grid-column: auto;
+    }
+
+    .reservation-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .reservation-form {
+        padding: 28px;
+    }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 480px) {
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .announcement {
+        font-size: 11px;
+        letter-spacing: 0.5px;
+    }
+
+    .hero {
+        min-height: 580px;
+    }
+
+    .hero-content > p {
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .hero-rating {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .scroll-down {
+        display: none;
+    }
+
+    .section-heading {
+        margin-bottom: 40px;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-image {
+        height: 240px;
+    }
+
+    .menu-filters {
+        gap: 8px;
+    }
+
+    .filter-btn {
+        padding: 10px 16px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 9px;
+    }
+
+    .gallery-grid img {
+        height: 160px;
+    }
+
+    .about-images {
+        padding: 0 14px 20px 0;
+    }
+
+    .about-main-image {
+        height: 320px;
+    }
+
+    .about-experience {
+        right: 0;
+        bottom: 40px;
+        padding: 14px 18px;
+    }
+
+    .about-experience strong {
+        font-size: 32px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .reservation-form {
+        padding: 24px 18px;
+    }
+
+    .testimonial-card {
+        padding: 26px 22px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-bottom-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        right: 15px;
+        bottom: 15px;
+        font-size: 25px;
+    }
+}
